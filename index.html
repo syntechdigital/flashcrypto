@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flash Crypto Software</title>
+
+<style>
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:'Segoe UI', Arial, sans-serif;
+  background:#f4f7fb;
+  color:#222;
+  line-height:1.6;
+}
+
+/* HERO */
+.hero{
+  background:
+    linear-gradient(rgba(10,25,60,.9),rgba(10,25,60,.9)),
+    url('https://images.pexels.com/photos/315788/pexels-photo-315788.jpeg');
+  background-size:cover;
+  background-position:right center;
+  color:white;
+  padding:120px 8%;
+  display:flex;
+  align-items:center;
+  min-height:100vh;
+}
+.hero-content{max-width:600px;}
+.hero h1{font-size:48px;margin-bottom:20px;}
+.hero p{font-size:18px;margin-bottom:35px;opacity:.9;}
+.btn-main{
+  background:#ffb300;
+  padding:16px 35px;
+  border:none;
+  border-radius:35px;
+  font-size:18px;
+  cursor:pointer;
+  font-weight:bold;
+  transition:.3s;
+}
+.btn-main:hover{background:#ffa000;}
+
+/* SECTION */
+.section{padding:80px 8%;text-align:center;background:#e6eff2;}
+
+/* CARD */
+.card{
+  background:#0d1117;
+  color:white;
+  max-width:420px;
+  margin:auto;
+  padding:30px;
+  border-radius:14px;
+  box-shadow:0 20px 40px rgba(0,0,0,.2);
+}
+.card-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+}
+.card ul{
+  text-align:left;
+  padding-left:20px;
+  font-size:14px;
+  line-height:2;
+  opacity:.9;
+}
+.buy-btn{
+  background:#1e88e5;
+  border:none;
+  padding:15px;
+  width:100%;
+  border-radius:30px;
+  margin-top:25px;
+  cursor:pointer;
+  color:white;
+  font-weight:bold;
+  transition:.3s;
+}
+.buy-btn:hover{background:#1565c0;}
+
+/* INFO */
+.info{padding:80px 8%;text-align:center;background:#f1f6f8;}
+
+/* CTA */
+.cta{
+  background:
+    linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url('https://images.unsplash.com/photo-1642104704074-907c0698cbd9');
+  background-size:cover;
+  background-position:center;
+  padding:100px 8%;
+  text-align:center;
+  color:white;
+}
+
+/* FAQ */
+.faq{padding:80px 8%;max-width:800px;margin:auto;}
+.faq-item{border-bottom:1px solid #ddd;padding:18px 0;cursor:pointer;}
+.faq-content{display:none;margin-top:10px;color:#555;}
+
+/* FLOATING CONTACT */
+.floating-contact{
+  position:fixed;
+  right:18px;
+  bottom:25px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  z-index:999;
+  transition:.4s;
+}
+.floating-contact.hide{transform:translateY(120px);opacity:0;}
+.float-wrapper{display:flex;align-items:center;gap:10px;animation:slideIn .9s ease;}
+.chat-label{
+  background:#111;
+  color:white;
+  padding:8px 14px;
+  border-radius:20px;
+  font-size:13px;
+  white-space:nowrap;
+  opacity:0;
+  transform:translateX(40px);
+  animation:labelSlide .8s forwards;
+}
+.float-btn{
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 8px 20px rgba(0,0,0,.25);
+  transition:.3s;
+  position:relative;
+}
+.float-btn::after{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  animation:pulse 2s infinite;
+}
+.float-btn img{width:28px;}
+.float-btn:hover{transform:scale(1.1);}
+.whatsapp{background:#25D366;}
+.telegram{background:#229ED9;}
+
+/* animations */
+@keyframes pulse{
+  0%{transform:scale(1);opacity:.7;box-shadow:0 0 0 0 rgba(0,255,200,.7);}
+  70%{transform:scale(1.35);opacity:0;box-shadow:0 0 0 20px rgba(0,255,200,0);}
+  100%{opacity:0;}
+}
+@keyframes slideIn{from{transform:translateX(80px);opacity:0;}to{transform:translateX(0);opacity:1;}}
+@keyframes labelSlide{to{opacity:1;transform:translateX(0);}}
+
+/* MOBILE */
+@media(max-width:900px){
+  .hero{text-align:center;padding:80px 20px;}
+  .hero h1{font-size:30px;}
+  .chat-label{display:none;}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Flash Crypto Generator Software</h1>
+    <p>The number one Flash Crypto Sender for all platforms including Binance, Bybit, TrustWallet and others.</p>
+    <button class="btn-main"><a href="homepage.html">BUY FLASH SOFTWARE</a></button>
+     <button class="btn-main"><a href="buyflashcrypto.html">BUY FLASH CRYPTO</a></button>
+  </div>
+</section>
+<!-- SOFTWARE CAPABILITIES -->
+<section class="section">
+  <h2>Software Capabilities</h2>
+</section>
+
+<!-- CARD -->
+<section class="section">
+  <div class="card">
+    <div class="card-top">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/019/843/197/small_2x/tether-gold-xaut-coin-cryptocurrency-concept-banner-background-vector.jpg" width="60">
+      <h3>5000 USDT</h3>
+      <span>$550</span>
+    </div>
+    <ul>
+      <li>Supported networks: TRC20, ERC20, BEP20</li>
+      <li>Supported wallets: All wallets</li>
+      <li>Supported exchanges: All</li>
+      <li>Transaction duration: Lifetime</li>
+      <li>Wallet transfers: 30</li>
+      <li>Mail confirmation: Yes</li>
+      <li>Splittable: Yes</li>
+      <li>Tradable: Yes</li>
+    </ul>
+    <button class="buy-btn"><a href="payment.html?coin=USDT&plan=5000&amount=5000"> Buy Now</a></button>
+  </div>
+</section>
+
+<!-- FLOATING CONTACT -->
+<div class="floating-contact" id="floatingButtons">
+  <div class="float-wrapper">
+    <div class="chat-label">Chat on WhatsApp</div>
+    <a href="https://wa.me/254798046220" target="_blank" class="float-btn whatsapp">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+    </a>
+  </div>
+  <div class="float-wrapper">
+    <div class="chat-label">Join Telegram</div>
+    <a href="https://t.me/yourtelegramusername" target="_blank" class="float-btn telegram">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
+    </a>
+  </div>
+</div>
+
+<!-- INFO -->
+<section class="info">
+  <h2>Flash USDT Sender</h2>
+  <p>These software also transfers flash USDT to multiple wallet adresses such as Binance, Kucoin and Byit with these flash coins having a duration of 3 to 180 days, globally with advanced routing technology.</p>
+  <br>
+  <button class="btn-main">
+    <a href="payment.html?coin=USDT&plan=8000&amount=8000" style="color:white; text-decoration:none;">BUY FLASH SOFTWARE</a>
+  </button>
+</section>
+
+<!-- CARD -->
+<section class="section">
+  <div class="card">
+    <div class="card-top">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXmj7P5OkIBeDlgc0uV8-327JTtCZ5ALcphQ&s" width="40">
+     <h3>8,000 USDT</h3>
+      <span>$850</span>
+    </div>
+    <ul>
+      <li>Supported networks: TRC20, ERC20, BEP20</li>
+      <li>Supported wallets: All wallets</li>
+      <li>Supported exchanges: All</li>
+      <li>Transaction duration: Lifetime</li>
+      <li>Wallet transfers: 30</li>
+      <li>Mail confirmation: Yes</li>
+      <li>Splittable: Yes</li>
+      <li>Tradable: Yes</li>
+    </ul>
+    <button class="buy-btn"><a href="payment.html?coin=USDT&plan=8000&amount=8000"> Buy Now</a></button>
+  </div>
+</section>
+</section>
+<section class="info">
+    <P><b>INSTRUCTIONS</b></P>
+  <P>Carefully follow the instructions below to purchase the Flash BTC, Flash USDT Sender</P>
+  <p>This software is only available for Android devices. iOS users can buy flash directly from this website into their crypto wallets or trading and betting platforms.</p>
+</section>
+<!-- FAQ -->
+<section class="faq">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <div class="faq-title">Can flash USDT be converted?</div>
+    <div class="faq-content">Conversion depends on exchange compatibility.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-title">Where can I use flash USDT?</div>
+    <div class="faq-content">Flash USDT works on most exchanges and wallets.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-title">Is the software instant?</div>
+    <div class="faq-content">Yes, transactions are processed instantly.</div>
+  </div>
+  <strong><P>Other Questions People Usually ask</P></strong>
+  <li>Can flash USDT be reversed?</li>
+    <li>Can I send flash USDT on Binance?</li>
+    <li>What is the price of flash USDT?</li>
+    <li>How do I use flash USDT?</li>
+    <li>What is the difference between normal and flash USDT?</li>
+    <li>Can I exchange flash USDT?</li>
+    <li>How can I flash USDT myself?</li>
+    <li>Is flash USDT traceable?</li>
+</section>
+
+<script>
+/* FAQ toggle */
+document.querySelectorAll(".faq-item").forEach(item=>{
+  item.addEventListener("click",()=>{
+    let content=item.querySelector(".faq-content");
+    content.style.display = content.style.display=="block" ? "none":"block";
+  });
+});
+
+/* SMART HIDE ON SCROLL */
+let lastScroll = 0;
+const floating = document.getElementById("floatingButtons");
+
+window.addEventListener("scroll",()=>{
+  let currentScroll = window.pageYOffset;
+  if(currentScroll > lastScroll){
+    floating.classList.add("hide");
+  } else {
+    floating.classList.remove("hide");
+  }
+  lastScroll = currentScroll;
+});
+</script>
+ <!-- Footer -->
+    <div style="margin-top:40px; font-size:14px; color:#666; text-align:center; background:#f1f1f1; padding:15px; border-radius:6px;">
+        <p></p>
+        <p>Copyright © 2026 FLASH CRYPTO GENERATOR</p>
+    </div>
+</body>
+</html>

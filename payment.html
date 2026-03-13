@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment</title>
+
+<style>
+body {
+  margin:0;
+  font-family:Arial;
+  background:#5f676a;
+  color:white;
+}
+
+.container {
+  max-width:420px;
+  margin:auto;
+  padding:20px;
+}
+
+.box {
+  background:#2f3537;
+  padding:20px;
+  border-radius:10px;
+  margin-top:20px;
+}
+
+.btn {
+  margin-top:20px;
+  background:#ffc107;
+  padding:14px;
+  border:none;
+  width:100%;
+  border-radius:25px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.btn:hover {
+  background:#ffca2c;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="box">
+  <h2>Send Payment</h2>
+
+  <p>Package: PLAN <span id="plan"></span></p>
+  <p>Amount: $<span id="planPrice"></span></p>
+
+  <p>Send <span id="amount"></span> <span id="coin"></span> to the link below</p>
+  <p id="wallet" style="word-break:break-all;"></p>
+
+  <!-- TELEGRAM BUTTON -->
+  <a id="telegramLink" target="_blank">
+    <button class="btn">Click Here to receive Payment Details</button>
+  </a>
+</div>
+
+</div>
+
+<script>
+/* GET URL PARAMETERS */
+const params = new URLSearchParams(window.location.search);
+
+const coin = params.get("coin");
+const plan = params.get("plan");
+const amount = params.get("amount");
+
+/* SET TEXT VALUES */
+document.getElementById("coin").innerText = coin;
+document.getElementById("plan").innerText = plan;
+document.getElementById("planPrice").innerText = plan;
+document.getElementById("amount").innerText = amount;
+
+/* TELEGRAM LINK */
+let telegramUser = "YOUR_TELEGRAM_USERNAME"; // replace with your username or group
+
+let message =
+  "Hello, I have sent payment for Plan " + plan +
+  " using " + coin +
+  ". Amount: " + amount;
+
+let encodedMessage = encodeURIComponent(message);
+
+document.getElementById("telegramLink").href =
+  "https://t.me/" + telegramUser + "?text=" + encodedMessage;
+</script>
+
+</body>
+</html>
