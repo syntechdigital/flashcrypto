@@ -4,171 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Flash Crypto Software</title>
+<link rel="stylesheet" href="style.css">
 
-<style>
-/* RESET */
-*{margin:0;padding:0;box-sizing:border-box;}
 
-body{
-  font-family:'Segoe UI', Arial, sans-serif;
-  background:#f4f7fb;
-  color:#222;
-  line-height:1.6;
-}
-
-/* HERO */
-.hero{
-  background:
-    linear-gradient(rgba(10,25,60,.9),rgba(10,25,60,.9)),
-    url('https://images.pexels.com/photos/315788/pexels-photo-315788.jpeg');
-  background-size:cover;
-  background-position:right center;
-  color:white;
-  padding:120px 8%;
-  display:flex;
-  align-items:center;
-  min-height:100vh;
-}
-.hero-content{max-width:600px;}
-.hero h1{font-size:48px;margin-bottom:20px;}
-.hero p{font-size:18px;margin-bottom:35px;opacity:.9;}
-.btn-main{
-  background:#ffb300;
-  padding:16px 35px;
-  border:none;
-  border-radius:35px;
-  font-size:18px;
-  cursor:pointer;
-  font-weight:bold;
-  transition:.3s;
-}
-.btn-main:hover{background:#ffa000;}
-
-/* SECTION */
-.section{padding:80px 8%;text-align:center;background:#e6eff2;}
-
-/* CARD */
-.card{
-  background:#0d1117;
-  color:white;
-  max-width:420px;
-  margin:auto;
-  padding:30px;
-  border-radius:14px;
-  box-shadow:0 20px 40px rgba(0,0,0,.2);
-}
-.card-top{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-bottom:20px;
-}
-.card ul{
-  text-align:left;
-  padding-left:20px;
-  font-size:14px;
-  line-height:2;
-  opacity:.9;
-}
-.buy-btn{
-  background:#1e88e5;
-  border:none;
-  padding:15px;
-  width:100%;
-  border-radius:30px;
-  margin-top:25px;
-  cursor:pointer;
-  color:white;
-  font-weight:bold;
-  transition:.3s;
-}
-.buy-btn:hover{background:#1565c0;}
-
-/* INFO */
-.info{padding:80px 8%;text-align:center;background:#f1f6f8;}
-
-/* CTA */
-.cta{
-  background:
-    linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
-    url('https://images.unsplash.com/photo-1642104704074-907c0698cbd9');
-  background-size:cover;
-  background-position:center;
-  padding:100px 8%;
-  text-align:center;
-  color:white;
-}
-
-/* FAQ */
-.faq{padding:80px 8%;max-width:800px;margin:auto;}
-.faq-item{border-bottom:1px solid #ddd;padding:18px 0;cursor:pointer;}
-.faq-content{display:none;margin-top:10px;color:#555;}
-
-/* FLOATING CONTACT */
-.floating-contact{
-  position:fixed;
-  right:18px;
-  bottom:25px;
-  display:flex;
-  flex-direction:column;
-  gap:14px;
-  z-index:999;
-  transition:.4s;
-}
-.floating-contact.hide{transform:translateY(120px);opacity:0;}
-.float-wrapper{display:flex;align-items:center;gap:10px;animation:slideIn .9s ease;}
-.chat-label{
-  background:#111;
-  color:white;
-  padding:8px 14px;
-  border-radius:20px;
-  font-size:13px;
-  white-space:nowrap;
-  opacity:0;
-  transform:translateX(40px);
-  animation:labelSlide .8s forwards;
-}
-.float-btn{
-  width:55px;
-  height:55px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  box-shadow:0 8px 20px rgba(0,0,0,.25);
-  transition:.3s;
-  position:relative;
-}
-.float-btn::after{
-  content:"";
-  position:absolute;
-  width:100%;
-  height:100%;
-  border-radius:50%;
-  animation:pulse 2s infinite;
-}
-.float-btn img{width:28px;}
-.float-btn:hover{transform:scale(1.1);}
-.whatsapp{background:#25D366;}
-.telegram{background:#229ED9;}
-
-/* animations */
-@keyframes pulse{
-  0%{transform:scale(1);opacity:.7;box-shadow:0 0 0 0 rgba(0,255,200,.7);}
-  70%{transform:scale(1.35);opacity:0;box-shadow:0 0 0 20px rgba(0,255,200,0);}
-  100%{opacity:0;}
-}
-@keyframes slideIn{from{transform:translateX(80px);opacity:0;}to{transform:translateX(0);opacity:1;}}
-@keyframes labelSlide{to{opacity:1;transform:translateX(0);}}
-
-/* MOBILE */
-@media(max-width:900px){
-  .hero{text-align:center;padding:80px 20px;}
-  .hero h1{font-size:30px;}
-  .chat-label{display:none;}
-}
-
-</style>
 </head>
 
 <body>
@@ -256,7 +94,6 @@ body{
     <button class="buy-btn"><a href="payment.html?coin=USDT&plan=8000&amount=8000"> Buy Now</a></button>
   </div>
 </section>
-</section>
 <section class="info">
     <P><b>INSTRUCTIONS</b></P>
   <P>Carefully follow the instructions below to purchase the Flash BTC, Flash USDT Sender</P>
@@ -264,7 +101,7 @@ body{
 </section>
 <!-- FAQ -->
 <section class="faq">
-  <h2>Frequently Asked Questions</h2>
+  <h2><strong><br> Frequently Asked Questions about flash Crypto and Software</h2></strong><br>
   <div class="faq-item">
     <div class="faq-title">Can flash USDT be converted?</div>
     <div class="faq-content">Conversion depends on exchange compatibility.</div>
@@ -277,15 +114,51 @@ body{
     <div class="faq-title">Is the software instant?</div>
     <div class="faq-content">Yes, transactions are processed instantly.</div>
   </div>
-  <strong><P>Other Questions People Usually ask</P></strong>
-  <li>Can flash USDT be reversed?</li>
-    <li>Can I send flash USDT on Binance?</li>
-    <li>What is the price of flash USDT?</li>
-    <li>How do I use flash USDT?</li>
-    <li>What is the difference between normal and flash USDT?</li>
-    <li>Can I exchange flash USDT?</li>
-    <li>How can I flash USDT myself?</li>
-    <li>Is flash USDT traceable?</li>
+ 
+  <div class="faq-item">
+    <div class="faq-title">Can the flash USDT be reversed?</div>
+    <div class="faq-content">Yes, you can reverse your crypto within the required time.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-title">Can I send flash USDT on Binance?</div>
+    <div class="faq-content">Yes, Binance supports flash USDT transfers.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-title">What is the price of flash USDT?</div>
+    <div class="faq-content">Prices vary depending on the package you choose.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-title">How do I use flash USDT?</div>
+    <div class="faq-content">You simply install the software and follow the instructions.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-title">What is the difference between normal and flash USDT?</div>
+    <div class="faq-content">Flash USDT has a limited duration, unlike normal USDT.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-title">Can I exchange flash USDT?</div>
+    <div class="faq-content">Yes, depending on the exchange compatibility.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-title">How can I flash USDT myself?</div>
+    <div class="faq-content">You need the Flash Crypto Generator software to do this.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-title">Is flash USDT traceable?</div>
+    <div class="faq-content">No, flash USDT transactions are not traceable.</div>
+  </div>
+
+  <P>Other Questions People Usually ask</P>
+       <div class="faq-item">
+    <div class="faq-title">Can the flash Usdt be Reverse?</div>
+    <div class="faq-content">Yes, you can reverse tour crypto within the required time.</div>
 </section>
 
 <script>
